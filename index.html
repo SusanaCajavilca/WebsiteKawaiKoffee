@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page: Kawai Coffee Shop</title> <!-- Product chosen: a fictional coffee accessories store -->
+    <!-- Inspired by the Asian Trend of Aesthetic Making Coffee -->
+    <!-- I want to publicly acknowledge my main source of inspiration and visual material: HANSE-->
+    <!-- Youtube chanel: https://www.youtube.com/@hanse_-->
+    <!-- Instagram chanel:   https://www.instagram.com/hanse____/-->
+    <meta name="description" content="This page is the Home Page for the Interface Design CSS Course Final Project.">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Here I put the Google Fonts: I choose 10 fonts: Raleway, Poppins, Tenor Sans, Amatic, Sue Ellen Francisco, Pacifico, Sacramento, Zen Loop,Twinkle Star, Noto Serif Korean-->
+    <!--  Cute and aesthetic font-styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Noto+Serif+KR:wght@300;400;700&family=Pacifico&family=Poppins:wght@300;400;700&family=Raleway:wght@100;300;400;500;700&family=Sacramento&family=Sue+Ellen+Francisco&family=Tenor+Sans&family=Twinkle+Star&family=Zen+Loop&display=swap" rel="stylesheet">
+    <!-- jQuery link This must be placed before the link to our custom js ... https://releases.jquery.com/ -->
+    <!-- making sure of using the latest version , in this case 3.7.1-->
+    <!-- minified is more efficient and faster, no wide space-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- add our custom js file -->
+    <script type="text/javascript" src="./js/custom-js.js"></script>
+    <!-- Add the normalization.css, get it from: https://necolas.github.io/normalize.css/-->
+    <link rel="stylesheet" href="./css/normalization.css">
+    <!-- Here I add the CSS file, there is only one css file -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+</head>
+<body class="IndexBody1">
+<header id="header"></header>
+<main>
+    <section class="video_intro">
+            <!-- Short intro video -->
+            <video id="intro-video" autoplay loop muted>
+                <source src="./vid/video_intro.mp4" type="video/mp4">
+            </video>
+    </section>
+    <section class="explain">
+        <h1>KAWAI KOFFEE</h1>
+        <h2><span class="ttitle">&nbsp;The beauty of making your own coffee-time&nbsp;</span></h2>
+        <p>Waking up early, commuting, working non-stop, eating with your colleagues, going back to working non-stop, getting home late, fixing a quick dinner, eating while watching videos on your cellphone if single or chatting with the family if you have one, and finally, hitting the pillow at night before doing it all again. Don't forget to meet your project deadlines, remember to pick up the kids after school, always take out the trash, better to do the laundry, plan your client-meetings, and mostly: don't be late.</p>
+        <p>Does this sound familiar to you?</p>
+        <p>Seems that something is <span class="mistic">missing</span>, right?</p>
+        <p>For the sake of your internal peace of mind you need to take a pause. A special moment only for yourself, where you can be active and relaxed at the same time. How about making your <span class="mistic">beautiful coffee time</span>, at home?  And how about making your <span class="mistic">beautiful coffee time</span> at home with cute and aesthetic accessories? Making your coffee at the privacy of your place is like a short mediation session. Making your beautiful coffee is like participating in a japanese tea ritual, where beautiful things can not be rushed to be done well.  </p>
+        <p>We invite you to click in the next pages to discover a new world of possibilities to make your <span class="mistic">beautiful coffee time</span> at home</p>
+    </section>
+    <section class="pages">
+        <div class="threepages">
+            <div class="for_page">
+                <img id="fo" src="./img/about_image.jpg" alt="image pageabout">
+                <a href="about.html">About us</a>
+            </div>
+            <div class="for_page">
+                <img id="ft" src="./img/product_image.jpg" alt="image pageproduct">
+                <a href="product.html">Our products</a>
+            </div>
+            <div class="for_page">
+                <img id="fth" src="./img/contact_image.jpg" alt="image pagecontact">
+                <a href="contact.html">Contact us</a>
+            </div>
+        </div>
+    </section>
+    <section class="popularitems">
+        <p>&nbsp;</p>
+        <h2><span class="ttitle">&nbsp;The most popular features of this month&nbsp;</span></h2>
+        <p>In <span class="name">KAWAI KOFFEE</span> we are constantly renovating our stocks, and adding the new latest models from all the world. We are pleasured to display our most-seller items in this month</p>
+        <div class="threeitems">
+            <div class="for_item">
+                <img class="fi" src="./img/fish_vase.jpg" alt="image item1">
+                <h4>Fish vase</h4>
+                <a href="product.html">Check it out</a>
+            </div>
+            <div class="for_item">
+                <img class="si" src="./img/bear_vase.jpg" alt="image item2">
+                <h4>Little bear vase</h4>
+                <a href="product.html">Check it out</a>
+            </div>
+            <div class="for_item">
+                <img class="ti" src="./img/cat_vase.jpg" alt="image item3">
+                <h4>Cat paw vase</h4>
+                <a href="product.html">Check it out</a>
+            </div>
+        </div>
+    </section>
+    <section class="video_ending">
+        <!-- Short final video -->
+        <video id="end-video" autoplay loop muted>
+            <source src="./vid/short_video.mp4" type="video/mp4">
+        </video>
+    </section>
+    <section class="collage">
+        <p>&nbsp;</p>
+        <h2><span class="ttitle">&nbsp;What our clients say&nbsp;</span></h2>
+        <p>In <span class="name">KAWAI KOFFEE</span> we are delighted to receive and read your reviews.You are more than welcomed to share with us your beautiful coffee time results in our social media. Read what others have to say</p>
+        <div class="reviews_level_1">
+            <div class="review1">
+                <div class="maskara">
+                    <p><span class="negrita">Marta</span> from Orillia says: Coffee time is a wonderful and beautiful moment thanks to Kawai Koffee!</p>
+                </div>
+            </div>
+            <div class="review2">
+                <div class="maskara">
+                    <p><span class="negrita">Jason</span> from Missisagua says: At first it didn't make sense to me, but now I get how important is to enjoy a coffee time beautifully</p>
+                </div>
+            </div>
+            <div class="review3">
+                <div class="maskara">
+                    <p><span class="negrita">Rebeca</span> from Alberta says: The vases are so original and cute!!</p>
+                </div>
+            </div>
+        </div>
+        <div class="reviews_level_2">
+            <div class="review4">
+                <div class="maskara">
+                    <p><span class="negrita">Tomas</span> from Toronto says: It is a nice hobby to make my own aesthetic coffee and enjoy it in my personal moment</p>
+                </div>
+            </div>
+            <div class="review5">
+                <div class="maskara">
+                    <p><span class="negrita">Ada</span> from Barrie says: I literally can't find these cute accessories anywhere else!! My favorite ones are the cat paws vases</p>
+                </div>
+            </div>
+            <div class="review6">
+                <div class="maskara">
+                    <p><span class="negrita">Gisella</span> from Newmarket says: Thanks to Kawai Koffee, I can get my cute coffee accessories easily</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="calltoaction">
+        <p>&nbsp;</p>
+        <h2><span class="ttitle">&nbsp;Make your beautiful coffee time&nbsp;</span></h2>
+        <div class="acciones">
+            <div class="action1">
+                <div class="actionmaskara">
+                    <h3>Come and visit us!</h3>
+                    <a href="contact.html#location" class="btn2">Click here</a>
+                </div>
+            </div>
+            <div class="action2">
+                <div class="actionmaskara">
+                    <h3>Check online shop!</h3>
+                    <a href="product.html#shop" class="btn2">Click here</a>
+                </div>
+            </div>
+        </div>
+        <p>&nbsp;</p>
+    </section>
+    <section class="phrase">
+        <h3><span class="famous_quote">&nbsp;"Beauty is higher than Genius, as it needs no explanation." - Oscar Wilde&nbsp;</span></h3>
+    </section>
+</main>
+<footer id="footer"></footer>
+</body>
+</html>
+

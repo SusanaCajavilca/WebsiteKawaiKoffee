@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Page: Kawai Coffee Shop</title> <!-- Product chosen: a fictional coffee accessories store -->
+    <!-- Inspired by the Asian Trend of Aesthetic Making Coffee -->
+    <!-- I want to publicly acknowledge my main source of inspiration and visual material: HANSE-->
+    <!-- Youtube chanel: https://www.youtube.com/@hanse_-->
+    <!-- Instagram chanel:   https://www.instagram.com/hanse____/-->
+    <meta name="description" content="This page is the Product Page for the Interface Design CSS Course Final Project.">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Here I put the Google Fonts: I choose 10 fonts: Raleway, Poppins, Tenor Sans, Amatic, Sue Ellen Francisco, Pacifico, Sacramento, Zen Loop,Twinkle Star, Noto Serif Korean-->
+    <!--  Cute and aesthetic font-styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Noto+Serif+KR:wght@300;400;700&family=Pacifico&family=Poppins:wght@300;400;700&family=Raleway:wght@100;300;400;500;700&family=Sacramento&family=Sue+Ellen+Francisco&family=Tenor+Sans&family=Twinkle+Star&family=Zen+Loop&display=swap" rel="stylesheet">
+    <!-- jQuery link This must be placed before the link to our custom js ... https://releases.jquery.com/ -->
+    <!-- making sure of using the latest version , in this case 3.7.1-->
+    <!-- minified is more efficient and faster, no wide space-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- add our custom js file -->
+    <script type="text/javascript" src="./js/custom-js.js"></script>
+    <!-- Add the normalization.css, get it from: https://necolas.github.io/normalize.css/-->
+    <link rel="stylesheet" href="./css/normalization.css">
+    <!-- Here I add the CSS file, there is only one css file -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+</head>
+<body class="IndexBody3">
+<header id="header"></header>
+<main>
+    <section class="masthead_product">
+        <div>
+            <!-- Here goes the Masthead Image and Title  -->
+            <h1>KAWAI KOFFEE</h1>
+            <a href="#shop">Shop</a>
+        </div>
+    </section>
+    <section id="shop">
+        <h2><span class="ttitle">&nbsp;Online Shop&nbsp;</span></h2>
+        <div class="product_row">
+            <div class="prod">
+                <div class="image_place">
+                    <img id="prod1" src="./img/Image2_prod1.jpg" alt="Product_1">
+                </div>
+                <div class="info_prod">
+                 <h4><span class="ab">&nbsp;Little bear vase&nbsp;</span></h4>
+                 <p>5 CAD</p>
+                 <p><span class="offer">&nbsp;SALE OFF&nbsp;</span> Get your cute teddy bear vase for a lovely coffee</p>
+                 <div class="sub_prod">
+                     <div>
+                         <!-- I found the following line of code in a real website: https://www.naturabrasil.com/en-ca/collections  -->
+                         <input aria-label="Quantity" type="number" value="1" name="quantity" step="1" min="1" inputmode="numeric">
+                     </div>
+                     <div>
+                         <p><button>
+                             <i class="fas fa-shopping-cart"></i> Buy Now
+                         </button></p>
+                     </div>
+                 </div>
+                </div>
+                <div class="divisionline"></div>
+            </div>
+            <div class="prod">
+                <div class="image_place">
+                    <img id="prod2" src="./img/Image2_prod2.jpg" alt="Product_2">
+                </div>
+                <div class="info_prod">
+                    <h4><span class="ab">&nbsp;Flamingo vase&nbsp;</span></h4>
+                    <p>8 CAD</p>
+                    <p>An elegant and original flamingo vase for your coffee time</p>
+                    <div class="sub_prod">
+                        <div>
+                            <input aria-label="Quantity" type="number" value="1" name="quantity" step="1" min="1" inputmode="numeric">
+                        </div>
+                        <div>
+                            <p><button>
+                                <i class="fas fa-shopping-cart"></i> Buy Now
+                            </button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divisionline"></div>
+            </div>
+        </div>
+        <div class="product_row">
+            <div class="prod">
+                <div class="image_place">
+                    <img id="prod3" src="./img/Image2_prod3.jpg" alt="Product_3">
+                </div>
+                <div class="info_prod">
+                    <h4><span class="ab">&nbsp;Tubular vase&nbsp;</span></h4>
+                    <p>6 CAD</p>
+                    <p>A classic safe and still elegant choice for your coffee time.</p>
+                    <div class="sub_prod">
+                        <div>
+                            <input aria-label="Quantity" type="number" value="1" name="quantity" step="1" min="1"  inputmode="numeric">
+                        </div>
+                        <p><button>
+                            <i class="fas fa-shopping-cart"></i> Buy Now
+                        </button></p>
+                    </div>
+                </div>
+                <div class="divisionline"></div>
+            </div>
+            <div class="prod">
+                <div class="image_place">
+                    <img id="prod4" src="./img/Image2_prod4.jpg" alt="Product_4">
+                </div>
+                <div class="info_prod">
+                    <h4><span class="ab">&nbsp;Small conic vase&nbsp;</span></h4>
+                    <p>6 CAD</p>
+                    <p>Small and cute, ideal for your happy coffee time at home</p>
+                    <div class="sub_prod">
+                        <div>
+                            <input aria-label="Quantity" type="number" value="1" name="quantity" step="1" min="1"  inputmode="numeric">
+                        </div>
+                        <div>
+                            <p><button>
+                                <i class="fas fa-shopping-cart"></i> Buy Now
+                            </button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divisionline"></div>
+            </div>
+        </div>
+        <div class="product_row">
+            <div class="prod">
+                <div class="image_place">
+                    <img id="prod5" src="./img/Image2_prod5.jpg" alt="Product_5">
+                </div>
+                <div class="info_prod">
+                    <h4><span class="ab">&nbsp;Cat mug set&nbsp;</span></h4>
+                    <p>15 CAD</p>
+                    <p>An adorable set, includes its spoon and a lid with cat ears!!</p>
+                    <div class="sub_prod">
+                        <div>
+                            <input aria-label="Quantity" type="number" value="1" name="quantity" step="1" min="1"  inputmode="numeric">
+                        </div>
+                        <div>
+                            <p><button>
+                                <i class="fas fa-shopping-cart"></i> Buy Now
+                            </button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divisionline"></div>
+            </div>
+            <div class="prod">
+                <div class="image_place">
+                    <img id="prod6" src="./img/Image2_prod6.jpg" alt="Product_6">
+                </div>
+                <div class="info_prod">
+                    <h4><span class="ab">&nbsp;Short coffee mug&nbsp;</span></h4>
+                    <p>5 CAD</p>
+                    <p><span class="offer">&nbsp;SALE OFF&nbsp;</span>Quickly, get your short mug now, at half of price</p>
+                    <div class="sub_prod">
+                        <div>
+                            <input aria-label="Quantity" type="number" value="1" name="quantity" step="1" min="1"  inputmode="numeric">
+                        </div>
+                        <div>
+                            <p><button>
+                                <i class="fas fa-shopping-cart"></i> Buy Now
+                            </button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divisionline"></div>
+            </div>
+        </div>
+        <div class="product_row">
+            <div class="prod">
+                <div class="image_place">
+                    <img id="prod7" src="./img/Image2_prod7.jpg" alt="Product_7">
+                </div>
+                <div class="info_prod">
+                    <h4><span class="ab">&nbsp;Fish vase&nbsp;</span></h4>
+                    <p>15 CAD</p>
+                    <p>From the deep ocean, this lovely vase came for you!</p>
+                    <div class="sub_prod">
+                        <div>
+                            <input aria-label="Quantity" type="number" value="1" name="quantity" step="1" min="1"  inputmode="numeric">
+                        </div>
+                        <div>
+                            <p><button>
+                                <i class="fas fa-shopping-cart"></i> Buy Now
+                            </button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divisionline"></div>
+            </div>
+            <div class="prod">
+                <div class="image_place">
+                    <img id="prod8" src="./img/Image2_prod8.jpg" alt="Product_8">
+                </div>
+                <div class="info_prod">
+                    <h4><span class="ab">&nbsp;Cat paw vase&nbsp;</span></h4>
+                    <p>10 CAD</p>
+                    <p>The favorite vase of all times. How lovely and round paws</p>
+                    <div class="sub_prod">
+                        <div>
+                            <input aria-label="Quantity" type="number" value="1" name="quantity" step="1" min="1"  inputmode="numeric">
+                        </div>
+                        <div>
+                            <p><button>
+                                <i class="fas fa-shopping-cart"></i> Buy Now
+                            </button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divisionline"></div>
+            </div>
+        </div>
+        <div class="product_row">
+            <div class="prod">
+                <div class="image_place">
+                    <img id="prod9" src="./img/Image2_prod9.jpg" alt="Product_9">
+                </div>
+                <div class="info_prod">
+                    <h4><span class="ab">&nbsp;Big cat mug&nbsp;</span></h4>
+                    <p>15 CAD</p>
+                    <p>Our latest product directly from Asia, get one now!</p>
+                    <div class="sub_prod">
+                        <div>
+                            <input aria-label="Quantity" type="number" value="1" name="quantity" step="1" min="1"  inputmode="numeric">
+                        </div>
+                        <div>
+                            <p><button>
+                                <i class="fas fa-shopping-cart"></i> Buy Now
+                            </button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divisionline"></div>
+            </div>
+            <div class="prod">
+                <div class="image_place">
+                    <img id="prod10" src="./img/Image2_prod10.jpg" alt="Product_10">
+                </div>
+                <div class="info_prod">
+                    <h4><span class="ab">&nbsp;Heart vase&nbsp;</span></h4>
+                    <p>10 CAD</p>
+                    <p>With this vase, you can feel your heart full of coffee</p>
+                    <div class="sub_prod">
+                        <div>
+                            <input aria-label="Quantity" type="number" value="1" name="quantity" step="1" min="1"  inputmode="numeric">
+                        </div>
+                        <div>
+                            <p><button>
+                                <i class="fas fa-shopping-cart"></i> Buy Now
+                            </button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divisionline"></div>
+            </div>
+        </div>
+        <div class="product_row">
+            <div class="prod">
+                <div class="image_place">
+                    <img id="prod11" src="./img/Image2_prod11.jpg" alt="Product_11">
+                </div>
+                <div class="info_prod">
+                    <h4><span class="ab">&nbsp;Boot vase&nbsp;</span></h4>
+                    <p>18 CAD</p>
+                    <p>Another original piece. This is the largest product we have!!</p>
+                    <div class="sub_prod">
+                        <div>
+                            <input aria-label="Quantity" type="number" value="1" name="quantity" step="1" min="1"  inputmode="numeric">
+                        </div>
+                        <div>
+                            <p><button>
+                                <i class="fas fa-shopping-cart"></i> Buy Now
+                            </button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divisionline"></div>
+            </div>
+            <div class="prod">
+                <div class="image_place">
+                    <img id="prod12" src="./img/Image2_prod12.jpg" alt="Product_12">
+                </div>
+                <div class="info_prod">
+                    <h4><span class="ab">&nbsp;Wine glass mug&nbsp;</span></h4>
+                    <p>10 CAD</p>
+                    <p>An elegant vase that imitates the shape of a cup of wine</p>
+                    <div class="sub_prod">
+                        <div>
+                            <input aria-label="Quantity" type="number" value="1" name="quantity" step="1" min="1" inputmode="numeric">
+                        </div>
+                        <div>
+                            <p><button>
+                                <i class="fas fa-shopping-cart"></i> Buy Now
+                            </button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divisionline"></div>
+            </div>
+        </div>
+        <div class="product_row">
+            <div class="prod">
+                <div class="image_place">
+                    <img id="prod13" src="./img/Image2_prod13.jpg" alt="Product_13">
+                </div>
+                <div class="info_prod">
+                    <h4><span class="ab">&nbsp;Skull vase&nbsp;</span></h4>
+                    <p>6 CAD</p>
+                    <p><span class="offer">&nbsp;SALE OFF&nbsp;</span> From the cemetery,this funny vase is for you</p>
+                    <div class="sub_prod">
+                        <div>
+                            <input aria-label="Quantity" type="number" value="1" name="quantity" step="1" min="1"  inputmode="numeric">
+                        </div>
+                        <div>
+                            <p><button>
+                                <i class="fas fa-shopping-cart"></i> Buy Now
+                            </button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divisionline"></div>
+            </div>
+            <div class="prod">
+                <div class="image_place">
+                    <img id="prod14" src="./img/Image2_prod14.jpg" alt="Product_14">
+                </div>
+                <div class="info_prod">
+                    <h4><span class="ab">&nbsp;Can vase&nbsp;</span></h4>
+                    <p>8 CAD</p>
+                    <p>Another classic option, it never gets old and it is on trend</p>
+                    <div class="sub_prod">
+                        <div>
+                            <input aria-label="Quantity" type="number" value="1" name="quantity" step="1" min="1"  inputmode="numeric">
+                        </div>
+                        <div>
+                            <p><button>
+                                <i class="fas fa-shopping-cart"></i> Buy Now
+                            </button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divisionline"></div>
+            </div>
+        </div>
+        <div class="product_row">
+            <div class="prod">
+                <div class="image_place">
+                    <img id="prod15" src="./img/Image2_prod15.jpg" alt="Product_15">
+                </div>
+                <div class="info_prod">
+                    <h4><span class="ab">&nbsp;Cubic vase&nbsp;</span></h4>
+                    <p>6 CAD</p>
+                    <p>Inspired by the cubic trend, this vase is original and strong</p>
+                    <div class="sub_prod">
+                        <div>
+                            <input aria-label="Quantity" type="number" value="1" name="quantity" step="1" min="1"  inputmode="numeric">
+                        </div>
+                        <div>
+                            <p><button>
+                                <i class="fas fa-shopping-cart"></i> Buy Now
+                            </button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divisionline"></div>
+            </div>
+            <div class="prod">
+                <div class="image_place">
+                    <img id="prod16" src="./img/Image2_prod16.jpg" alt="Product_16">
+                </div>
+                <div class="info_prod">
+                    <h4><span class="ab">&nbsp;Essence mug&nbsp;</span></h4>
+                    <p>15 CAD</p>
+                    <p>You can get your favorite essence with this lovely mug</p>
+                    <div class="sub_prod">
+                        <div>
+                            <input aria-label="Quantity" type="number" value="1" name="quantity" step="1" min="1"  inputmode="numeric">
+                        </div>
+                        <div>
+                            <p><button>
+                                <i class="fas fa-shopping-cart"></i> Buy Now
+                            </button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divisionline"></div>
+            </div>
+        </div>
+        <div class="product_row">
+            <div class="prod">
+                <div class="image_place">
+                    <img id="prod17" src="./img/Image2_prod17.jpg" alt="Product_17">
+                </div>
+                <div class="info_prod">
+                    <h4><span class="ab">&nbsp;Big conic vase&nbsp;</span></h4>
+                    <p>6 CAD</p>
+                    <p>Of course, this option is the complement of its little brother.</p>
+                    <div class="sub_prod">
+                        <div>
+                            <input aria-label="Quantity" type="number" value="1" name="quantity" step="1" min="1"  inputmode="numeric">
+                        </div>
+                        <div>
+                            <p><button>
+                                <i class="fas fa-shopping-cart"></i> Buy Now
+                            </button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divisionline"></div>
+            </div>
+            <div class="prod">
+                <div class="image_place">
+                    <img id="prod18" src="./img/Image2_prod18.jpg" alt="Product_18">
+                </div>
+                <div class="info_prod">
+                    <h4><span class="ab">&nbsp;Cute toilet mug&nbsp;</span></h4>
+                    <p>10 CAD</p>
+                    <p>How funny and original is to have your own toilet mug.</p>
+                    <div class="sub_prod">
+                        <div>
+                            <input aria-label="Quantity" type="number" value="1" name="quantity" step="1" min="1"  inputmode="numeric">
+                        </div>
+                        <div>
+                            <p><button>
+                                <i class="fas fa-shopping-cart"></i> Buy Now
+                            </button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divisionline"></div>
+            </div>
+        </div>
+    </section>
+    <section class="calltoactiontype2">
+        <p>&nbsp;</p>
+        <h2><span class="ttitle">&nbsp;Make your beautiful coffee time&nbsp;</span></h2>
+        <div class="accionsola">
+            <div class="actionunica1">
+                <div class="actionmaskara">
+                <h3>Come and visit us!</h3>
+                <a href="contact.html#location" class="btn2">Click here</a>
+               </div>
+            </div>
+        </div>
+        <p>&nbsp;</p>
+    </section>
+    <section class="phrase">
+        <h3><span class="famous_quote">&nbsp;"Everything has beauty, but not everyone sees it." - Confucius&nbsp;</span></h3>
+    </section>
+</main>
+<footer id="footer"></footer>
+</body>
+</html>
+

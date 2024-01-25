@@ -1,0 +1,1933 @@
+/*Color scheme: depending how can you see it: Analogous or a mix with Monochrome (a bit) */
+/*This was previously consulted with the professor and approved*/
+
+/*I am using black, white and orange - I want to transmit a warming sensation to the user */
+/*Two families fonts used: sans-serif and fantasy - and many fonts related: Raleway, Tenor Sans, Amatic, Sue Ellen Francisco, Zen Loop, Papyrus*/
+
+/*Styling*/
+
+/*First is the code for the general settings - starts in line:16 */
+/*Then, is the code for the global header and footer - starts in line:32 */
+/*Then, is the code for Home Page, using class="IndexBody1" - starts in line:214 */
+/*Then, is the code for About Page, using class="IndexBody2" - starts in line:593 */
+/*Then, is the code for Product Page, using class="IndexBody3" - starts in line:816 */
+/*Then, is the code for Contact Page, using class="IndexBody4" - starts in line:1017 */
+/*Responsiveness starts in line 1200: "breakpoints" are 1200px, 1024px, 900px, 768px, 600px, 480px, and 320px  */
+
+/* General settings  */
+
+html{
+    scroll-behavior: smooth;
+}
+
+.IndexBody1,.IndexBody2,.IndexBody3,.IndexBody4{
+    margin:0px;   /*  0 margin, a default value */
+    background-color: #f4f4f4;  /*  a nice white to the eyes of the user*/
+
+
+}
+main{
+    text-align: center;
+}
+/***************************************************/
+/* Working in the global header  */
+
+.desktop-navigation{
+    background-color: #fdb03c; /*  a nice black to the eyes of the user*/
+    display: flex;
+    align-items: center;
+    height: 125px;
+    padding: 0px 25px;
+}
+
+.desktop-navigation div{
+    height: 115px;
+    width: auto;
+    flex-grow: 1;  /* pushing navigation to the right */
+}
+
+.desktop-navigation img{ /* targets any image */
+    height: 100%;
+    width: auto;
+}
+
+.desktop-navigation menu{
+    display: flex;
+    margin-bottom: 0px;
+    list-style: none;  /* removes the dots */
+}
+
+.desktop-navigation menu li {
+    border-right: solid 2px #0e0e0e; /*  a nice white to the eyes of the user*/
+    padding: 0px 10px;
+}
+
+.desktop-navigation menu li:last-of-type{
+    border-right: none;
+}
+
+a,li{
+    font-family: 'Amatic SC',sans-serif;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #0e0e0e;    /*  a nice white to the eyes of the user*/
+}
+
+.desktop-navigation menu a:hover{
+    font-weight: 900;  /*range from 100 to 900*/
+    color: #576CBC;
+}
+
+.desktop-navigation menu a:visited{
+    /*color:#19376D;*/
+}
+
+.desktop-navigation menu a:active{
+    color: #f4f4f4;
+}
+
+.mobile-navigation{
+    display: none;
+}
+
+
+/****************************************/
+/* Working in the global footer  */
+
+
+footer menu{
+    display: flex;
+    margin-bottom: 0px;
+    list-style: none;  /* removes the dots */
+}
+
+footer{
+    background-color: #0e0e0e;  /*  a nice black to the eyes of the user*/
+    height: 550px;
+    width: auto;
+    color: #f4f4f4;
+    font-family: 'Zen Loop',sans-serif;
+    font-size: 30px;
+}
+
+
+footer> div> div> nav> menu> li>a
+{
+    color: #f4f4f4;
+}
+
+footer> div> div> nav> menu li {
+    border-right: solid 2px #f4f4f4; /*  a nice white to the eyes of the user*/
+    padding: 0px 30px;
+}
+
+footer> div> div> nav> menu li:last-of-type{
+    border-right: none;
+}
+
+footer> div> div> nav> menu> li>a:hover{
+    color: #fdb03c;
+}
+
+footer> div> div> nav> menu> li>a:active{
+    color: #576CBC;
+}
+
+.subnav >a {
+    border-right: solid 2px #f4f4f4; /*  a nice white to the eyes of the user*/
+    padding: 10px 25px;
+}
+
+.subnav >a:last-of-type{
+    border-right: none;
+}
+
+footer form{
+    margin-top:5%;
+    margin-bottom:5%;
+    border-style: solid;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    margin-left: 3%;
+}
+
+footer form p{
+    margin: 3%
+}
+
+
+footer input{
+    width: 62%;
+    margin: 1%;
+    font-size: 22px;
+    font-family: 'Zen Loop',sans-serif;
+}
+
+input[type="submit"] {
+    width: 18%; /* Adjust the width as needed */
+
+    background-color: #f4f4f4;
+    color:#0e0e0e;
+    font-family: 'Zen Loop',sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 2%;
+}
+
+footer>div:nth-child(1){
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+footer>div:nth-child(2){
+    padding-top: 3%;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+}
+
+footer>div:nth-child(2) div{
+    height: 115px;
+    width: auto;
+}
+
+footer>div:nth-child(2) img{ /* targets any image */
+    height: 100%;
+    width: auto;
+}
+
+footer>div:nth-child(2) div:nth-child(1) {
+    margin-left: 2%;
+}
+
+footer>div:nth-child(2) div:nth-child(3) {
+    margin-right: 2%;
+}
+
+.famous_quote {
+    font-family: 'Papyrus',fantasy;
+    font-size: 29px;
+}
+
+/****************************************/
+/* Working in the Home Page  */
+
+
+
+.IndexBody1 .video_intro{
+    width: auto;
+    height: 100%;
+}
+
+.IndexBody1 .video_ending{
+    width: auto;
+    height: 100%;
+
+}
+
+.IndexBody1 .explain {
+    background-color: #f4f4f4;
+    margin-top: 0px;
+}
+
+#intro-video, #end-video{
+    height: 100%; /* 100% of the parent*/
+    width: 100%;
+    object-fit: cover;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.explain p{
+    font-family: 'Raleway',sans-serif;
+    font-size: 20px;
+    padding-left: 1%;
+    padding-right: 1%;
+    letter-spacing: 1.5px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.IndexBody1 h1{
+    font-family: 'Tenor Sans',sans-serif;
+    text-align: center;
+    font-size: 80px;
+    opacity: 0; /* Initially hide the text */
+    animation: home-h1-animation 6s forwards;
+}
+
+@keyframes home-h1-animation {
+    from {
+        transform: scaleY(-1); /* Start with no height (hidden) */
+        opacity: 0; /* Start with zero opacity (hidden) */
+    }
+    to {
+        transform: scaleY(1); /* Grow to full height (100%) */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+.ttitle {
+    background-color: #0e0e0e;
+    color: #f4f4f4;
+
+}
+
+.mistic{
+    font-family: 'Sue Ellen Francisco',sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.pages{
+    text-align: center;
+
+}
+
+.threepages{
+
+        background-color: #0e0e0e;
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        padding: 1%;
+}
+
+.for_page{
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
+}
+
+#fo, #ft, #fth{
+    width: 60%;
+    height: 60%;
+    clip-path: circle(47%);
+    margin: auto;
+}
+
+.threepages a{
+    margin: auto;
+    border: solid 4px #0e0e0e;
+    background-color: #0e0e0e;
+    color: #f9f9f9;
+    padding: 15px 25px;
+    text-decoration: none;
+    width: 30%;
+}
+
+.threepages a:hover{
+    border-color: #f4f4f4 ;
+    color: #fdb03c;
+}
+
+.IndexBody1 h2 {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 40px;
+    animation: lefto-right 5s infinite;
+}
+
+@keyframes lefto-right {
+    to {
+        transform: scaleX(1); /* Start with no height (hidden) */
+        opacity: 1; /* Start with zero opacity (hidden) */
+    }
+    from {
+        transform: scaleX(0); /* Grow to full height (100%) */
+        opacity: 0; /* Fully visible */
+    }
+}
+
+.popularitems p{
+    font-family: 'Raleway',sans-serif;
+    font-size: 20px;
+    padding-left: 1%;
+    padding-right: 1%;
+    letter-spacing: 1.5px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.name{
+    font-weight: 800;
+}
+
+.popularitems{
+    text-align: center;
+
+}
+
+.threeitems{
+
+    background-color: #0e0e0e;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    padding: 1%;
+}
+
+.for_item {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.fi, .si, .ti{
+    width: 70%;
+    height: 70%;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    margin: auto;
+    transition: transform 0.8s;
+}
+
+.fi:hover,.si:hover,.ti:hover {
+    transform: rotateY(180deg); /* Flip the image horizontally on hover */
+}
+
+.threeitems a{
+    margin: auto;
+    border: solid 4px #fdb03c;
+    background-color: #fdb03c;
+    color: #0e0e0e;
+    padding: 15px 25px;
+    text-decoration: none;
+    width: 30%;
+    font-size: 30px;
+}
+
+.threeitems a:hover{
+    border-color: #f4f4f4 ;
+    background-color:#0e0e0e;
+    color: #fdb03c;
+}
+
+
+
+.popularitems h4{
+    font-family: 'Sue Ellen Francisco',sans-serif;
+    font-size: 40px;
+    color: #f4f4f4;
+    margin: 1% 1%;
+    line-height: 1.8;
+    animation: bleeping 1.5s infinite;
+}
+
+@keyframes bleeping {
+    from {
+        opacity: 1;
+        color: #fdb03c;
+    }
+    to {
+        opacity: 0.3;
+    }
+    from {
+        opacity: 1;
+    }
+}
+
+
+.collage p{
+    font-family: 'Raleway',sans-serif;
+    font-size: 20px;
+    padding-left: 1%;
+    padding-right: 1%;
+    letter-spacing: 1.5px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.collage{
+    text-align: center;
+}
+
+.negrita{
+    font-weight: 900;
+}
+.reviews_level_1,.reviews_level_2{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    min-height: 75vh;
+}
+
+.review1, .review2, .review3, .review4, .review5, .review6{
+    background-size: cover;
+    height: 100%;
+
+}
+
+.review1{
+    background-image: url("../img/review1.jpg");
+}
+.review2{
+    background-image: url("../img/review4.jpg");
+}
+.review3{
+    background-image: url("../img/review3.jpg");
+}
+.review4{
+    background-image: url("../img/review2.jpg");
+}
+.review5{
+    background-image: url("../img/review6.jpg");
+}
+.review6{
+    background-image: url("../img/review5.jpg");
+}
+
+.review1 .maskara,
+.review2 .maskara,
+.review3 .maskara,
+.review4 .maskara,
+.review5 .maskara,
+.review6 .maskara{
+    background-color: rgba(253,176,60,.7);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: all linear .25s;  /* adding to the element */
+
+}
+
+.review1 .maskara p,
+.review2 .maskara p,
+.review3 .maskara p,
+.review4 .maskara p,
+.review5 .maskara p,
+.review6 .maskara p{
+    color: #f8f8f8;
+    font-size: 28px;
+}
+
+.review1 .maskara:hover,
+.review2  .maskara:hover,
+.review3 .maskara:hover,
+.review4 .maskara:hover,
+.review5 .maskara:hover,
+.review6 .maskara:hover{
+    opacity: 1;
+}
+
+
+.acciones{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 600px;
+}
+
+.acciones div{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.action1, .action2{
+    background-size: cover;
+    height: 100%;
+
+}
+
+.action1{
+    background-image: url("../img/action1.jpg");
+}
+.action2{
+    background-image: url("../img/action2.jpg");
+}
+
+.action1 .actionmaskara, .action2 .actionmaskara{
+    background-color: rgba(253,176,60,.7);
+    opacity: 0;
+    transition: all linear .25s;
+    height: 100%;
+    width: 100%;
+}
+
+.action1 .actionmaskara:hover, .action2 .actionmaskara:hover{
+    opacity: 1;
+
+}
+
+.action1 .actionmaskara, .action2 .actionmaskara{
+    color: #f8f8f8;
+    font-family: 'Raleway',sans-serif;
+    letter-spacing: 1.5px;
+
+}
+
+.actionmaskara h3{
+    font-weight: bold;
+    font-size: 45px;
+    text-shadow: 4px 2px 4px rgba(0,0,0,0.5);
+}
+
+.btn2{
+    border: solid 3px #f4f4f4;
+    padding: 15px 50px;
+    border-radius: 20px;
+    color: #0e0e0e;
+    /*background-color: rgba(37,249,62,0);*/
+    font-weight: 600;
+    /*transition: all .25s linear;*/
+    background-image: linear-gradient(45deg,#f4f4f4 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;;
+    transition: background 1s ease-in-out;
+}
+
+.btn2:hover{
+    color: #0e0e0e;
+    /*background-color: #f4f4f4;*/
+    background-position: 0;
+    text-shadow: 4px 2px 4px rgba(0 0 0 / 50%);
+}
+/****************************************/
+/* Working in the About Page  */
+
+
+.masthead_about{    /*Adjusting the image  that goes in the masthead*/
+    height: 110vh;
+    width: 100%;
+    background-image: url('../img/fondo_about.jpg');  /*Using a photo for the background of the masthead*/
+    background-size: cover;
+}
+
+.masthead_about div{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);  /*Making image opaque*/
+    display: flex;
+    align-items: center;       /*with this the h1 goes to the center*/
+    justify-content: center;  /*with this the h1 goes to the center*/
+}
+
+.masthead_about h1{
+    color:#f4f4f4; /* A nice white , nice to the eyes of the user*/
+    font-family: 'Tenor Sans',sans-serif;
+    font-size: 120px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    animation: home-h1-animation 3s forwards;
+
+}
+
+.masthead_about a{
+    background-color: #f4f4f4;
+    padding: 1% 2% 1% 2%;
+    border-color: #0e0e0e;
+    border-radius: 10px;
+    position: absolute;
+    top:110%;
+    left: 47%;
+    font-size: 30px;
+}
+
+
+.masthead_about a:hover{
+    animation-name:bajabaja;
+    animation-duration: 1s;
+    animation-iteration-count: infinite; /* 3 ,10 ,20 times whatever you want*/
+    animation-direction: alternate;
+    animation-timing-function: linear; /* or ease, ease-in,ease-in-out,linear,cubic-beazer */
+    animation-fill-mode: forwards;
+    animation-delay: .25s;
+}
+
+.IndexBody2 .video_about{
+    width: auto;
+    height: 100%;
+
+}
+
+
+
+
+
+#short-about-video {
+    height: 100%; /* 100% of the parent*/
+    width: 100%;
+    object-fit: cover;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.IndexBody2 h2 {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 40px;
+    animation: lefto-right 8s infinite;
+}
+
+#our_story p, .our_mission p, .social_media p{
+    font-family: 'Raleway',sans-serif;
+    font-size: 20px;
+    padding-left: 1%;
+    padding-right: 1%;
+    letter-spacing: 1.5px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#our_story div{
+    width: 30%;
+    height: auto;
+    margin: auto;
+}
+
+#our_story div img{
+    width: 100%;
+    height: auto;
+}
+
+.svg-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+}
+
+.svg-container div{
+    height: 200px;
+    font-family: 'Raleway ', sans-serif;
+}
+
+.svg-container  div{
+    background-color: #0e0e0e;
+    width: 80%;
+    margin: auto;
+}
+
+.btn-container{
+    width: 5%;
+    margin: auto;  /*center the element, divides equally the rest on the left on the right*/
+    display: grid;
+    place-items: center;
+}
+
+.btn-container .btn {
+    color: #f8f8f8;
+    font-weight: 400;
+    line-height: 45px;
+    margin-left: -18%;
+    max-width: 0px;
+    position: relative; /*relation the the parent*/
+    text-decoration: none;
+    width: 100%;
+}
+.btn-container .btn:hover{
+    text-decoration: none;
+}
+
+.btn-container .btn-1{
+    font-weight: 100;
+}
+
+/*think your svg as your canvas*/
+
+.btn-container .btn-1 svg{
+    height: 48px;
+    left: -14px;
+    position: absolute;
+    width: 280px;
+}
+
+
+.btn-container .btn-1 svg rect{
+    fill:none;
+    stroke: #f8f8f8;
+    stroke-width: 2; /*the width of the stroke*/
+    stroke-dasharray: 422,0; /* this defines the pattern and gaps used to paint the outline of the shape*/
+    transition: all 0.35s linear;
+}
+
+.btn-container .btn-1:hover{
+    /*target the parent element*/
+    background: rgba(255,51,45,0);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.btn-container .btn-1:hover rect{
+    stroke-width: 5;
+    stroke-dasharray: 15,310;
+    stroke-dashoffset: 48; /* defines an offset of the rendering of the associated dash array*/
+}
+
+#flipflap{
+    position: relative;
+    margin: 10px auto;
+    width: 600px;
+    height: 500px;
+    z-index: 1;
+    perspective: 1000px;
+}
+#flipflap img{
+    width: 100%;
+    height: auto;
+
+}
+#changing-images1{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1.0s linear;
+}
+#flipflap:hover #changing-images1{
+    transform: rotateY(180deg);
+}
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.face.back {
+    display: block;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+}
+
+
+
+
+.flipflap div{
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+.flipflap div img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+/****************************************/
+/* Working in the Product Page  */
+
+.masthead_product{    /*Adjusting the image that goes in the masthead*/
+    height: 110vh;
+    width: 100%;
+    background-image: url('../img/fondo_product.jpg');  /*Using a  photo for the background of the masthead*/
+    background-size: cover;
+}
+
+.masthead_product div{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.88);  /*Making image opaque*/
+    display: flex;
+    align-items: center;       /*with this the h1 goes to the center*/
+    justify-content: center;  /*with this the h1 goes to the center*/
+}
+
+.masthead_product h1{
+    color:#f4f4f4; /* A nice white , nice to the eyes of the user*/
+    font-family: 'Tenor Sans',sans-serif;
+    font-size: 120px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    animation: home-h1-animation 3s forwards;
+}
+
+.masthead_product a{
+    background-color: #f4f4f4;
+    padding: 1% 2% 1% 2%;
+    border-color: #0e0e0e;
+    border-radius: 10px;
+    position: absolute;
+    top:110%;
+    left: 48%;
+}
+
+
+.masthead_product a:hover{
+    animation-name:bajabaja;
+    animation-duration: 1s;
+    animation-iteration-count: infinite; /* 3 ,10 ,20 times whatever you want*/
+    animation-direction: alternate;
+    animation-timing-function: linear; /* or ease, ease-in,ease-in-out,linear,cubic-beazer */
+    animation-fill-mode: forwards;
+    animation-delay: .25s;
+}
+
+@keyframes bajabaja {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(25px);
+    }
+}
+
+.accionsola{
+    height: 650px;
+    width: 50%;
+    margin: auto;
+}
+
+.accionsola div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.actionunica1{
+    background-image: url("../img/action1.jpg");
+    background-size: cover;
+    height: 100%;
+
+}
+.actionunica2{
+    background-image: url("../img/action2.jpg");
+    background-size: cover;
+    height: 100%;
+}
+
+.actionunica1 .actionmaskara, .actionunica2 .actionmaskara{
+    background-color: rgba(253,176,60,.7);
+    opacity: 0;
+    transition: all linear .25s;
+    height: 100%;
+    width: 100%;
+}
+
+.actionunica1 .actionmaskara:hover, .actionunica2 .actionmaskara:hover{
+    opacity: 1;
+}
+
+.actionunica1 .actionmaskara, .actionunica2 .actionmaskara{
+    color: #f8f8f8;
+    font-family: 'Raleway',sans-serif;
+    letter-spacing: 1.5px;
+
+}
+
+.IndexBody3 h2 {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 40px;
+    animation: lefto-right 5s infinite;
+}
+.product_row, .sub_prod{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.image_place{
+    width: 90%;
+}
+
+.image_place img{
+    width: 100%;
+    height: auto;
+    border: solid 2px #0e0e0e;
+}
+
+.prod > div:first-child{
+    margin-left: 5%;
+}
+.product_row{
+    padding: 1% 1% 4% 1%;
+
+}
+
+input[type="number"] {
+    text-align: center; /*centering the number*/
+    width: 20%;
+}
+
+.IndexBody3 button {
+    padding: 2%;
+    border-radius:15%;
+}
+
+.IndexBody3 button:hover{
+    color: #f4f4f4;
+    background-color: #0e0e0e;
+
+}
+
+.offer{
+    animation: bleeping2 1.5s infinite;
+    font-family: 'Tenor Sans', sans-serif; ;
+}
+
+
+@keyframes bleeping2 {
+    from {
+        background-color: #0e0e0e;
+        color: #f4f4f4;
+    }
+    to {
+        background-color: #f4f4f4;
+        color: #0e0e0e;
+    }
+
+}
+
+.info_prod h4{
+    font-family: 'Sue Ellen Francisco',sans-serif;
+    font-size: 45px;
+    line-height: 1.55;
+    width: 100%;
+    margin: 0.5% 0.5%;
+}
+
+.info_prod .ab:hover{
+    background-color: #0e0e0e;
+    color: #f4f4f4;
+    border-radius:15%;
+}
+
+.info_prod p{
+    font-family: 'Raleway',sans-serif;
+}
+
+.info_prod h4 + p{
+    font-size: 25px;
+    margin: 0.5% 0.5%;
+}
+
+.info_prod h4 + p + p{
+    font-size: 20px;
+    margin: 2%;
+}
+
+.sub_prod{
+    align-items: center;
+}
+
+.divisionline{
+   border-bottom: solid 5px #0e0e0e;
+    width: 90%;
+    margin: auto;
+
+}
+    /****************************************/
+/* Working in the Contact Page  */
+
+.IndexBody4 .anothervideo_intro{
+    width: auto;
+    height: 100%;
+}
+
+#anotherintro-video{
+    height: 100%; /* 100% of the parent*/
+    width: 100%;
+    object-fit: cover;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.IndexBody4 h1{
+    font-family: 'Tenor Sans',sans-serif;
+    text-align: center;
+    font-size: 80px;
+    opacity: 0; /* Initially hide the text */
+    animation: home-h1-animation 6s forwards;
+}
+
+
+.IndexBody4 h2 {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 40px;
+    animation: lefto-right 5s infinite;
+}
+
+.contact_us p, #location p{
+    font-family: 'Raleway',sans-serif;
+    font-size: 20px;
+    padding-left: 1%;
+    padding-right: 1%;
+    letter-spacing: 1.5px;
+    text-align: center;
+    line-height: 1.5;
+}
+.formulario, .datacontact{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.datacontact div{
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+.datacontact div img{
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+    border: solid 3px #0e0e0e;
+}
+
+#location .datacontact  div:nth-child(1) p:nth-child(1),
+#location .datacontact  div:nth-child(1) p:nth-child(3),
+#location .datacontact  div:nth-child(1) p:nth-child(6),
+#location .datacontact  div:nth-child(1) p:nth-child(8){
+    font-weight: bold;
+    font-size: 23px;
+}
+
+
+/*this is the second flip flap*/
+#flipflap2{
+    position: relative;
+    margin: 10px auto;
+    width: 500px;
+    height: 400px;
+    z-index: 1;
+    perspective: 1000px;
+}
+#flipflap2 img{
+    width: 100%;
+    height: auto;
+
+}
+#changing-images2{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1.0s linear;
+}
+#flipflap2:hover #changing-images2{
+    transform: rotateY(180deg);
+}
+.face2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.face2.back2 {
+    display: block;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+}
+
+
+
+.flipflap2 div{
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+.flipflap2 div img{
+    width: 100%;
+    height: auto;
+}
+
+
+/*working on the form*/
+.formulario {
+    padding: 1%;
+}
+
+.formulario div .form{
+    padding-top: 6%;
+    border: solid 1px #0e0e0e;
+    border-radius: 5px;
+}
+
+
+.formulario div .form div input,
+.formulario div .form div textarea{
+    outline: none;
+    border: solid 2px #0e0e0e;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Raleway, 'sans-serif';
+    transition: all .25s linear;
+}
+
+.formulario div .form div input:focus,
+.formulario div .form div textarea:focus{
+    border-radius: 15px;
+    border: solid 3px #fdb03c;
+}
+
+.formulario div .form div textarea{
+    width: 50%;
+    padding: 25px;
+}
+
+.formulario div .form div{
+    padding: 2%;
+}
+
+.formulario div .form div:nth-child(3) input{
+    background-color: #f4f4f4;
+    color: #0e0e0e;
+    font-family: Raleway, 'sans-serif';
+    font-size: 20px;
+    width: 120px;
+    font-weight: bold;
+}
+
+.formulario div .form div:nth-child(3) input:hover{
+    background-color: #0e0e0e;
+    color: #f4f4f4;
+}
+
+.form > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form > div:nth-child(1) input {
+    width: 60%; /* Adjust the width as needed */
+    margin: auto;
+}
+
+
+
+/*Responsiveness*/
+
+/* Quick summary*/
+
+/* My "breakpoints" are 1200px, 1024px, 900px, 768px, 600px, 480px, and 320px */
+
+@media screen and (max-width: 1200px){
+    /*Header and Footer setup*/
+    /* Styling Home Page  */
+    .threepages a{
+        width: 40%;
+    }
+
+    .actionunica1,.actionunica2,.action1, .action2{
+        height: 80%;
+    }
+    .calltoaction, .calltoactiontype2{
+        height: 650px;
+    }
+
+    /* Styling About Page  */
+    /* Styling Product  Page  */
+    /* Styling Contact Page  */
+}
+
+@media screen and (max-width: 1024px){
+    /*Header and Footer setup*/
+    /* Styling Home Page  */
+
+    .threepages a{
+        width: 45%;
+    }
+
+    .actionunica1,.actionunica2,.action1, .action2{
+        height: 70%;
+    }
+
+    .calltoaction, .calltoactiontype2{
+        height: 600px;
+    }
+
+.threeitems a{
+
+        font-size: 25px;
+        padding: 5px 5px;
+    }
+    /* Styling About Page  */
+    /* Styling Product  Page  */
+    /* Styling Contact Page  */
+    #flipflap2 img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    /*Header and Footer setup*/
+footer> div> div> nav> menu> li>a
+    {
+        font-size: 30px;
+    }
+
+footer> div> div> nav> menu li {
+        border-right: solid 2px #f4f4f4; /*  a nice white to the eyes of the user*/
+        padding: 0px 20px;
+    }
+
+    .famous_quote {
+
+        font-size: 24px;
+    }
+
+    .actionunica1,.actionunica2{
+        height: 60%;
+    }
+    /* Styling Home Page  */
+.threepages a {
+    font-size: 30px;
+    width: 40%;
+}
+    /* Styling About Page  */
+
+#flipflap {
+    width: 500px;
+    height: 450px;
+}
+
+.btn-container .btn-1 svg {
+    width: 250px;
+}
+
+.svg-container> div:nth-child(1)>.btn-container> a{
+    font-size: 30px;
+}
+    /* Styling Product  Page  */
+
+    /* Styling Contact Page  */
+
+    #flipflap2{
+        width: 400px;
+    }
+
+    .calltoaction, .calltoactiontype2{
+        height: 550px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 768px){
+
+
+    /*Header and Footer setup*/
+  /*from this point our header changes to a mobile type*/
+.desktop-navigation{
+     display: none;
+}
+
+    .mobile-navigation{
+        display: flex;
+        align-items: center;
+        height: 120px;
+    }
+
+    .mobile-navigation div:nth-child(1){
+        flex-grow: 1;
+        height: 110px;
+    }
+
+    .mobile-navigation div:nth-child(1) a img{
+        height: 100%;
+    }
+
+    /*working on the menu*/
+    .mobile-navigation input + label{
+        position: fixed;
+        top:55px;
+        right: 40px;
+        height: 20px;
+        width: 25px;
+        z-index: 5;
+    }
+
+    .mobile-navigation input + label span{
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        top:50%;
+        margin-top: -1px;
+        left:0;
+        display: block;
+        transition: 0.5s;
+        background: #0e0e0e;
+    }
+
+    .mobile-navigation input + label span:first-child{
+        top:3px;
+    }
+
+
+    .mobile-navigation input + label span:last-child{
+        top:18px;
+    }
+
+    .mobile-navigation label:hover{
+        cursor: pointer;
+
+    }
+
+
+
+    .mobile-navigation input:checked + label span{
+        opacity: 0;
+        top:50%;
+        color: #0e0e0e;
+    }
+
+    .mobile-navigation input:checked + label span:first-child{
+        opacity: 1;
+        transform: rotate(405deg);
+    }
+
+    .mobile-navigation input:checked + label span:last-child{
+        opacity: 1;
+        transform: rotate(-405deg);
+    }
+
+    .mobile-navigation input ~nav{
+        background: #fdb03c;
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 125px;
+        z-index: 3;
+        transition: .5s;
+        overflow: hidden;
+        padding: 10px;
+    }
+
+    .mobile-navigation input ~nav > menu{
+        text-align: center;
+        position: absolute;
+        top:35%;
+        left: 20%;
+        right: 20%;
+        list-style: none;
+    }
+
+    .mobile-navigation input ~ nav > menu li{
+        opacity: 0;
+        transition: .5s;
+        transition-delay: 0s;
+    }
+
+    .mobile-navigation input ~ nav > menu li a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #0e0e0e;
+        font-weight: bold;
+        display: block;
+        font-size: 1.5em;
+        padding: 20px;
+    }
+
+    .mobile-navigation input ~ nav > menu li a:hover{
+        color: #fdb03c;
+        background-color: #f4f4f4;
+    }
+
+    .mobile-navigation input ~ nav > menu li a:active{
+        color: #f4f4f4;
+        background-color: #0e0e0e;
+    }
+
+    .mobile-navigation input:checked ~nav{
+        height: 100%;
+        transition-delay: 0s;
+    }
+
+    .mobile-navigation input:checked ~nav > menu li{
+        opacity: 1;
+        transition-delay: .25s;
+    }
+
+
+input{
+        width: 70%;
+
+    }
+footer>div:nth-child(2) div:nth-child(2) {
+        font-size: 25px;
+    }
+    /* Styling Home Page  */
+.threepages a {
+
+        width: 50%;
+    }
+
+.threeitems a{
+
+        font-size: 20px;
+        padding: 3px 3px;
+}
+
+
+
+    .actionunica1,.actionunica2,.action1, .action2{
+        height: 55%;
+    }
+
+    .calltoaction, .calltoactiontype2{
+        height: 500px;
+    }
+
+    /* Styling About Page  */
+
+.btn-container .btn-1 svg {
+        width: 228px;
+}
+
+.btn-container .btn{
+    margin-left: -30%;
+}
+    /* Styling Product  Page  */
+    /* Styling Contact Page  */
+
+    #flipflap2{
+        width: 350px;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    /*Header and Footer setup*/
+
+a,li {
+    font-size: 25px;
+}
+
+footer{
+    flex-direction: column; /* Set the flex-direction to column because the screen is little*/
+    align-items: flex-start;
+}
+
+footer{
+        height: auto;
+    }
+
+footer>div:nth-child(2) div:nth-child(2) {
+        font-size: 22px;
+}
+
+footer>div:nth-child(1){
+        display: flex;
+        flex-direction: column; /* Set the flex-direction to column because the screen is little*/
+        align-items: flex-start;
+    }
+
+footer div {
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.subnav >a {
+        border-right: solid 2px #f4f4f4; /*  a nice white to the eyes of the user*/
+        padding: 26px 26px 0px 22px;
+    }
+
+
+.famous_quote {
+
+        font-size: 18px;
+}
+
+.action1, .action2{
+        height: 48%;
+}
+
+.actionunica1,.actionunica2{
+        height: 44%;
+}
+
+.calltoaction{
+        height: 490px;
+}
+
+.calltoactiontype2{
+        height: 430px;
+}
+
+
+.actionmaskara h3{
+        font-weight: bold;
+        font-size: 32px;
+        text-shadow: 4px 2px 4px rgba(0,0,0,0.5);
+}
+
+.btn2{
+        border: solid 3px #f4f4f4;
+        padding: 12px 40px;
+        border-radius: 20px;
+        color: #0e0e0e;
+        /*background-color: rgba(37,249,62,0);*/
+        font-weight: 600;
+        /*transition: all .25s linear;*/
+        background-image: linear-gradient(45deg,#f4f4f4 50%, transparent 50%);
+        background-position: 100%;
+        background-size: 400%;;
+        transition: background 1s ease-in-out;
+}
+
+
+
+    /* Styling Home Page  */
+.threepages a {
+
+        width: 60%;
+    }
+
+
+.threeitems h4{
+    font-size: 25px;
+    }
+
+.threeitems a{
+
+        font-size: 15px;
+        padding: 3px 3px;
+}
+
+.reviews_level_1,.reviews_level_2{
+        height: 300px;
+        min-height: unset;
+}
+
+.review1, .review2, .review3, .review4, .review5, .review6{
+        background-size: cover;
+        width: 100%;
+
+}
+
+    .review1 .maskara p,
+    .review2 .maskara p,
+    .review3 .maskara p,
+    .review4 .maskara p,
+    .review5 .maskara p,
+    .review6 .maskara p{
+
+        font-size: 20px;
+}
+    /* Styling About Page  */
+    .btn-container .btn-1 svg {
+        width: 180px;
+}
+
+.svg-container> div:nth-child(1)>.btn-container> a{
+        font-size: 22px;
+}
+
+
+#our_story div{
+        width: 45%;
+        height: auto;
+        margin: auto;
+    }
+    /* Styling Product  Page  */
+
+/* from this point onwards, we display the products in column */
+.product_row{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.product_row{
+        padding: 1% 1% 0% 1%;
+
+}
+
+.prod{
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+
+    /* Styling Contact Page  */
+.formulario, .datacontact{
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    width: 90%;
+    margin: auto;
+
+}
+
+#flipflap2{
+       padding-top: 10%;
+        width: 400px;
+}
+.calltoactiontype2 >p:nth-child(1){
+    display: none;
+}
+
+
+}
+
+
+@media screen and (max-width: 480px){
+    /*Header and Footer setup*/
+
+a,li {
+        font-size: 22px;
+    }
+
+nav{
+    padding-bottom: 4%;
+}
+
+    footer>div:nth-child(2) div{
+        height: 95px;
+        width: auto;
+}
+
+footer>div:nth-child(2) div:nth-child(2) {
+        font-size: 18px;
+}
+
+.action1, .action2{
+        height: 41%;
+}
+
+.actionunica1,.actionunica2{
+        height: 35%;
+}
+
+.calltoaction{
+        height: 440px;
+}
+
+.calltoactiontype2{
+        height: 370px;
+}
+
+
+    /* Styling Home Page  */
+.explain p {
+
+    font-size: 15px;
+}
+.threepages a {
+        font-size: 28px;
+        width: 65%;
+}
+
+
+
+.threeitems a{
+
+        font-size: 12px;
+        padding: 1px 1px;
+}
+
+.reviews_level_1,.reviews_level_2{
+    display: flex;
+    flex-direction: column; /* Set the flex-direction to column because the screen is little*/
+    align-items: flex-start;
+    height:1500px;
+}
+    /* Styling About Page  */
+.masthead_about h1{
+        font-size: 90px;
+}
+
+#flipflap{
+        width: 400px;
+        height: 400px;
+}
+
+.svg-container {
+        display: grid;
+        grid-template-columns: 100%;
+        margin: auto;
+    }
+
+.svg-container div {
+        height: 100px;
+    }
+
+.btn-container .btn{
+        margin-left: -22%;
+}
+    /* Styling Product  Page  */
+.masthead_product h1{
+        font-size: 90px;
+}
+    /* Styling Contact Page  */
+}
+
+
+@media screen and (max-width: 320px){
+    /*Header and Footer setup*/
+footer{
+    font-size: 18px;
+}
+
+footer> div> div> nav> menu> li>a
+    {
+        font-size: 20px;
+    }
+
+menu {
+    margin-left: -6%;
+}
+a,li {
+        font-size: 20px;
+    }
+
+
+footer> div> div> nav> menu li {
+        padding: 0px 10px;
+    }
+
+footer>div:nth-child(2)> div:nth-child(1) {
+    display:none;
+    }
+
+footer>div:nth-child(2)> div:nth-child(2) {
+        display:none;
+    }
+
+footer>div:nth-child(2) div:nth-child(3){
+        margin: auto;
+    }
+
+input[type="submit"] {
+    width: 60px;
+}
+    /* Styling Home Page  */
+.IndexBody1 h1{
+
+        font-size: 35px;
+}
+
+.IndexBody1 h2{
+
+        font-size: 28px;
+}
+
+.threepages a {
+        font-size: 25px;
+        width: 30%;
+    }
+
+
+.threeitems h4{
+        font-size: 15px;
+}
+
+.threeitems a{
+
+        font-size: 8px;
+
+}
+
+.collage > p:nth-child(1), .popularitems > p:nth-child(1){
+    font-size: 0.5px;
+}
+
+.threepages ,.threeitems{
+        display: flex;
+        flex-direction: column; /* Set the flex-direction to column because the screen is little*/
+        align-items: flex-start;
+}
+
+    .fi, .si, .ti {
+        width: 50%;
+        height: 50%;
+        padding: 1%;
+}
+
+.threeitems h4 {
+       font-size: 32px;
+}
+
+.threeitems a {
+    font-size: 18px;
+    margin-bottom: 3%;
+}
+
+.acciones{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.calltoaction{
+        height: 700px;
+}
+
+.action1, .action2{
+        height: 50%;
+}
+
+.accionsola{
+    width: 100%;
+}
+
+.actionunica1,.actionunica2{
+    height:48%;
+}
+/*+++*/
+
+    /* Styling About Page  */
+
+.masthead_about h1{
+        font-size: 70px;
+    }
+
+.calltoaction > p:nth-child(1){
+    display: none;
+}
+
+#flipflap{
+        width: 300px;
+        height: 300px;
+    }
+
+#our_story div{
+    width: 64%;
+}
+
+.IndexBody2 .phrase{
+    padding-top: 70px;
+}
+    /* Styling Product  Page  */
+.masthead_product h1{
+        font-size: 70px;
+}
+
+.IndexBody3 .phrase{
+        padding-top: 110px;
+}
+    /* Styling Contact Page  */
+ .IndexBody4 h1{
+        font-size: 70px;
+}
+
+.IndexBody4 h2{
+
+        font-size: 28px;
+}
+
+#flipflap2{
+
+        width: 250px;
+        height: 220px;
+}
+
+#location p{
+        font-size: 15px
+}
+
+.IndexBody4 .phrase{
+        padding-top: 50px;
+}
+}
